@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: be.fgov.ehealth.emf.kmehr;singleton:=true
 Automatic-Module-Name: be.fgov.ehealth.emf.kmehr
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.38.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
