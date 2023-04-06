@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="be.fgov.ehealth.emf.kmehr.feature"
+      label="KMEHR XML implementation for EMF"
+      version="1.38.0.qualifier"
+      provider-name="Dennis Wagelaar"
+      plugin="be.fgov.ehealth.emf.kmehr">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="be.fgov.ehealth.emf.kmehr"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

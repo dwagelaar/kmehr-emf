@@ -17,11 +17,13 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/dwagelaar/fhir-xml-emf</url>
+			<url>https://maven.pkg.github.com/dwagelaar/kmehr-emf</url>
 		</repository>
 	</distributionManagement>
 	<modules>
 		<module>be.fgov.ehealth.emf.kmehr</module>
+		<module>be.fgov.ehealth.emf.kmehr.feature</module>
+		<module>be.fgov.ehealth.emf.kmehr.update</module>
 	</modules>
 	<build>
 		<pluginManagement>

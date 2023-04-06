@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="be.fgov.ehealth.emf.kmehr.feature">
+      <category name="kmehr-emf"/>
+   </feature>
+   <category-def name="kmehr-emf" label="KMEHR XML implementation for EMF">
+      <description>
+         KMEHR XML implementation for EMF features
+      </description>
+   </category-def>
+</site>
