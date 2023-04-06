@@ -7,6 +7,6 @@
 		<artifactId>kmehr-emf</artifactId>
 		<version>1.38.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>be.gfov.ehealth.emf.kmehr.feature</artifactId>
+	<artifactId>be.fgov.ehealth.emf.kmehr.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
 </project>
