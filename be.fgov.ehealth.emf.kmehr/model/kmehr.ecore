@@ -846,8 +846,8 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="kmehrmessage" upperBound="-2"
-        eType="#//KmehrmessageType" volatile="true" transient="true" derived="true"
-        containment="true" resolveProxies="false">
+        eType="#//Kmehrmessage" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="kmehrmessage"/>
@@ -2149,7 +2149,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="KmehrmessageType">
+  <eClassifiers xsi:type="ecore:EClass" name="Kmehrmessage">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="to transfer medical information about one or several patients (using one folder per patient)."/>
     </eAnnotations>

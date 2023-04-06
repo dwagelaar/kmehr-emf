@@ -7,7 +7,7 @@ import be.fgov.ehealth.standards.kmehr.schema.kmehr.ConfidentialityType;
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.FolderType;
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.HeaderType;
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrPackage;
-import be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType;
+import be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage;
 
 import java.util.Collection;
 
@@ -31,23 +31,23 @@ import org.w3._2001._04.xmlenc.EncryptedType;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Kmehrmessage Type</b></em>'.
+ * An implementation of the model object '<em><b>Kmehrmessage</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageTypeImpl#getConfidentiality <em>Confidentiality</em>}</li>
- *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageTypeImpl#getHeader <em>Header</em>}</li>
- *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageTypeImpl#getFolder <em>Folder</em>}</li>
- *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageTypeImpl#getSignature <em>Signature</em>}</li>
- *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageTypeImpl#getEncryptedData <em>Encrypted Data</em>}</li>
- *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageTypeImpl#getBase64EncryptedData <em>Base64 Encrypted Data</em>}</li>
+ *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageImpl#getConfidentiality <em>Confidentiality</em>}</li>
+ *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageImpl#getHeader <em>Header</em>}</li>
+ *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageImpl#getFolder <em>Folder</em>}</li>
+ *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageImpl#getSignature <em>Signature</em>}</li>
+ *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageImpl#getEncryptedData <em>Encrypted Data</em>}</li>
+ *   <li>{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageImpl#getBase64EncryptedData <em>Base64 Encrypted Data</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implements KmehrmessageType {
+public class KmehrmessageImpl extends MinimalEObjectImpl.Container implements Kmehrmessage {
 	/**
 	 * The cached value of the '{@link #getConfidentiality() <em>Confidentiality</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -122,7 +122,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected KmehrmessageTypeImpl() {
+	protected KmehrmessageImpl() {
 		super();
 	}
 
@@ -133,7 +133,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return KmehrPackage.Literals.KMEHRMESSAGE_TYPE;
+		return KmehrPackage.Literals.KMEHRMESSAGE;
 	}
 
 	/**
@@ -155,7 +155,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		ConfidentialityType oldConfidentiality = confidentiality;
 		confidentiality = newConfidentiality;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE_TYPE__CONFIDENTIALITY, oldConfidentiality, newConfidentiality);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE__CONFIDENTIALITY, oldConfidentiality, newConfidentiality);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -171,14 +171,14 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		if (newConfidentiality != confidentiality) {
 			NotificationChain msgs = null;
 			if (confidentiality != null)
-				msgs = ((InternalEObject)confidentiality).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__CONFIDENTIALITY, null, msgs);
+				msgs = ((InternalEObject)confidentiality).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__CONFIDENTIALITY, null, msgs);
 			if (newConfidentiality != null)
-				msgs = ((InternalEObject)newConfidentiality).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__CONFIDENTIALITY, null, msgs);
+				msgs = ((InternalEObject)newConfidentiality).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__CONFIDENTIALITY, null, msgs);
 			msgs = basicSetConfidentiality(newConfidentiality, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE_TYPE__CONFIDENTIALITY, newConfidentiality, newConfidentiality));
+			eNotify(new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE__CONFIDENTIALITY, newConfidentiality, newConfidentiality));
 	}
 
 	/**
@@ -200,7 +200,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		HeaderType oldHeader = header;
 		header = newHeader;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE_TYPE__HEADER, oldHeader, newHeader);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE__HEADER, oldHeader, newHeader);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -216,14 +216,14 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		if (newHeader != header) {
 			NotificationChain msgs = null;
 			if (header != null)
-				msgs = ((InternalEObject)header).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__HEADER, null, msgs);
+				msgs = ((InternalEObject)header).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__HEADER, null, msgs);
 			if (newHeader != null)
-				msgs = ((InternalEObject)newHeader).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__HEADER, null, msgs);
+				msgs = ((InternalEObject)newHeader).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__HEADER, null, msgs);
 			msgs = basicSetHeader(newHeader, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE_TYPE__HEADER, newHeader, newHeader));
+			eNotify(new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE__HEADER, newHeader, newHeader));
 	}
 
 	/**
@@ -234,7 +234,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public EList<FolderType> getFolder() {
 		if (folder == null) {
-			folder = new EObjectContainmentEList<FolderType>(FolderType.class, this, KmehrPackage.KMEHRMESSAGE_TYPE__FOLDER);
+			folder = new EObjectContainmentEList<FolderType>(FolderType.class, this, KmehrPackage.KMEHRMESSAGE__FOLDER);
 		}
 		return folder;
 	}
@@ -260,7 +260,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldSignatureESet = signatureESet;
 		signatureESet = true;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE, oldSignature, newSignature, !oldSignatureESet);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE__SIGNATURE, oldSignature, newSignature, !oldSignatureESet);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -276,9 +276,9 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		if (newSignature != signature) {
 			NotificationChain msgs = null;
 			if (signature != null)
-				msgs = ((InternalEObject)signature).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE, null, msgs);
+				msgs = ((InternalEObject)signature).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__SIGNATURE, null, msgs);
 			if (newSignature != null)
-				msgs = ((InternalEObject)newSignature).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE, null, msgs);
+				msgs = ((InternalEObject)newSignature).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__SIGNATURE, null, msgs);
 			msgs = basicSetSignature(newSignature, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
@@ -286,7 +286,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 			boolean oldSignatureESet = signatureESet;
 			signatureESet = true;
 			if (eNotificationRequired())
-				eNotify(new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE, newSignature, newSignature, !oldSignatureESet));
+				eNotify(new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE__SIGNATURE, newSignature, newSignature, !oldSignatureESet));
 		}
 	}
 
@@ -301,7 +301,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldSignatureESet = signatureESet;
 		signatureESet = false;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.UNSET, KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE, oldSignature, null, oldSignatureESet);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.UNSET, KmehrPackage.KMEHRMESSAGE__SIGNATURE, oldSignature, null, oldSignatureESet);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -316,7 +316,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 	public void unsetSignature() {
 		if (signature != null) {
 			NotificationChain msgs = null;
-			msgs = ((InternalEObject)signature).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE, null, msgs);
+			msgs = ((InternalEObject)signature).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__SIGNATURE, null, msgs);
 			msgs = basicUnsetSignature(msgs);
 			if (msgs != null) msgs.dispatch();
 		}
@@ -324,7 +324,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 			boolean oldSignatureESet = signatureESet;
 			signatureESet = false;
 			if (eNotificationRequired())
-				eNotify(new ENotificationImpl(this, Notification.UNSET, KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE, null, null, oldSignatureESet));
+				eNotify(new ENotificationImpl(this, Notification.UNSET, KmehrPackage.KMEHRMESSAGE__SIGNATURE, null, null, oldSignatureESet));
 		}
 	}
 
@@ -357,7 +357,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		EncryptedType oldEncryptedData = encryptedData;
 		encryptedData = newEncryptedData;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE_TYPE__ENCRYPTED_DATA, oldEncryptedData, newEncryptedData);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE__ENCRYPTED_DATA, oldEncryptedData, newEncryptedData);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -373,14 +373,14 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		if (newEncryptedData != encryptedData) {
 			NotificationChain msgs = null;
 			if (encryptedData != null)
-				msgs = ((InternalEObject)encryptedData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__ENCRYPTED_DATA, null, msgs);
+				msgs = ((InternalEObject)encryptedData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__ENCRYPTED_DATA, null, msgs);
 			if (newEncryptedData != null)
-				msgs = ((InternalEObject)newEncryptedData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__ENCRYPTED_DATA, null, msgs);
+				msgs = ((InternalEObject)newEncryptedData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__ENCRYPTED_DATA, null, msgs);
 			msgs = basicSetEncryptedData(newEncryptedData, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE_TYPE__ENCRYPTED_DATA, newEncryptedData, newEncryptedData));
+			eNotify(new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE__ENCRYPTED_DATA, newEncryptedData, newEncryptedData));
 	}
 
 	/**
@@ -402,7 +402,7 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		Base64EncryptedDataType oldBase64EncryptedData = base64EncryptedData;
 		base64EncryptedData = newBase64EncryptedData;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA, oldBase64EncryptedData, newBase64EncryptedData);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE__BASE64_ENCRYPTED_DATA, oldBase64EncryptedData, newBase64EncryptedData);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -418,14 +418,14 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 		if (newBase64EncryptedData != base64EncryptedData) {
 			NotificationChain msgs = null;
 			if (base64EncryptedData != null)
-				msgs = ((InternalEObject)base64EncryptedData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA, null, msgs);
+				msgs = ((InternalEObject)base64EncryptedData).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__BASE64_ENCRYPTED_DATA, null, msgs);
 			if (newBase64EncryptedData != null)
-				msgs = ((InternalEObject)newBase64EncryptedData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA, null, msgs);
+				msgs = ((InternalEObject)newBase64EncryptedData).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - KmehrPackage.KMEHRMESSAGE__BASE64_ENCRYPTED_DATA, null, msgs);
 			msgs = basicSetBase64EncryptedData(newBase64EncryptedData, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA, newBase64EncryptedData, newBase64EncryptedData));
+			eNotify(new ENotificationImpl(this, Notification.SET, KmehrPackage.KMEHRMESSAGE__BASE64_ENCRYPTED_DATA, newBase64EncryptedData, newBase64EncryptedData));
 	}
 
 	/**
@@ -436,17 +436,17 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case KmehrPackage.KMEHRMESSAGE_TYPE__CONFIDENTIALITY:
+			case KmehrPackage.KMEHRMESSAGE__CONFIDENTIALITY:
 				return basicSetConfidentiality(null, msgs);
-			case KmehrPackage.KMEHRMESSAGE_TYPE__HEADER:
+			case KmehrPackage.KMEHRMESSAGE__HEADER:
 				return basicSetHeader(null, msgs);
-			case KmehrPackage.KMEHRMESSAGE_TYPE__FOLDER:
+			case KmehrPackage.KMEHRMESSAGE__FOLDER:
 				return ((InternalEList<?>)getFolder()).basicRemove(otherEnd, msgs);
-			case KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE:
+			case KmehrPackage.KMEHRMESSAGE__SIGNATURE:
 				return basicUnsetSignature(msgs);
-			case KmehrPackage.KMEHRMESSAGE_TYPE__ENCRYPTED_DATA:
+			case KmehrPackage.KMEHRMESSAGE__ENCRYPTED_DATA:
 				return basicSetEncryptedData(null, msgs);
-			case KmehrPackage.KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA:
+			case KmehrPackage.KMEHRMESSAGE__BASE64_ENCRYPTED_DATA:
 				return basicSetBase64EncryptedData(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -460,17 +460,17 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case KmehrPackage.KMEHRMESSAGE_TYPE__CONFIDENTIALITY:
+			case KmehrPackage.KMEHRMESSAGE__CONFIDENTIALITY:
 				return getConfidentiality();
-			case KmehrPackage.KMEHRMESSAGE_TYPE__HEADER:
+			case KmehrPackage.KMEHRMESSAGE__HEADER:
 				return getHeader();
-			case KmehrPackage.KMEHRMESSAGE_TYPE__FOLDER:
+			case KmehrPackage.KMEHRMESSAGE__FOLDER:
 				return getFolder();
-			case KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE:
+			case KmehrPackage.KMEHRMESSAGE__SIGNATURE:
 				return getSignature();
-			case KmehrPackage.KMEHRMESSAGE_TYPE__ENCRYPTED_DATA:
+			case KmehrPackage.KMEHRMESSAGE__ENCRYPTED_DATA:
 				return getEncryptedData();
-			case KmehrPackage.KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA:
+			case KmehrPackage.KMEHRMESSAGE__BASE64_ENCRYPTED_DATA:
 				return getBase64EncryptedData();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -485,23 +485,23 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case KmehrPackage.KMEHRMESSAGE_TYPE__CONFIDENTIALITY:
+			case KmehrPackage.KMEHRMESSAGE__CONFIDENTIALITY:
 				setConfidentiality((ConfidentialityType)newValue);
 				return;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__HEADER:
+			case KmehrPackage.KMEHRMESSAGE__HEADER:
 				setHeader((HeaderType)newValue);
 				return;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__FOLDER:
+			case KmehrPackage.KMEHRMESSAGE__FOLDER:
 				getFolder().clear();
 				getFolder().addAll((Collection<? extends FolderType>)newValue);
 				return;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE:
+			case KmehrPackage.KMEHRMESSAGE__SIGNATURE:
 				setSignature((SignatureType)newValue);
 				return;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__ENCRYPTED_DATA:
+			case KmehrPackage.KMEHRMESSAGE__ENCRYPTED_DATA:
 				setEncryptedData((EncryptedType)newValue);
 				return;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA:
+			case KmehrPackage.KMEHRMESSAGE__BASE64_ENCRYPTED_DATA:
 				setBase64EncryptedData((Base64EncryptedDataType)newValue);
 				return;
 		}
@@ -516,22 +516,22 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case KmehrPackage.KMEHRMESSAGE_TYPE__CONFIDENTIALITY:
+			case KmehrPackage.KMEHRMESSAGE__CONFIDENTIALITY:
 				setConfidentiality((ConfidentialityType)null);
 				return;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__HEADER:
+			case KmehrPackage.KMEHRMESSAGE__HEADER:
 				setHeader((HeaderType)null);
 				return;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__FOLDER:
+			case KmehrPackage.KMEHRMESSAGE__FOLDER:
 				getFolder().clear();
 				return;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE:
+			case KmehrPackage.KMEHRMESSAGE__SIGNATURE:
 				unsetSignature();
 				return;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__ENCRYPTED_DATA:
+			case KmehrPackage.KMEHRMESSAGE__ENCRYPTED_DATA:
 				setEncryptedData((EncryptedType)null);
 				return;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA:
+			case KmehrPackage.KMEHRMESSAGE__BASE64_ENCRYPTED_DATA:
 				setBase64EncryptedData((Base64EncryptedDataType)null);
 				return;
 		}
@@ -546,20 +546,20 @@ public class KmehrmessageTypeImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case KmehrPackage.KMEHRMESSAGE_TYPE__CONFIDENTIALITY:
+			case KmehrPackage.KMEHRMESSAGE__CONFIDENTIALITY:
 				return confidentiality != null;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__HEADER:
+			case KmehrPackage.KMEHRMESSAGE__HEADER:
 				return header != null;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__FOLDER:
+			case KmehrPackage.KMEHRMESSAGE__FOLDER:
 				return folder != null && !folder.isEmpty();
-			case KmehrPackage.KMEHRMESSAGE_TYPE__SIGNATURE:
+			case KmehrPackage.KMEHRMESSAGE__SIGNATURE:
 				return isSetSignature();
-			case KmehrPackage.KMEHRMESSAGE_TYPE__ENCRYPTED_DATA:
+			case KmehrPackage.KMEHRMESSAGE__ENCRYPTED_DATA:
 				return encryptedData != null;
-			case KmehrPackage.KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA:
+			case KmehrPackage.KMEHRMESSAGE__BASE64_ENCRYPTED_DATA:
 				return base64EncryptedData != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //KmehrmessageTypeImpl
+} //KmehrmessageImpl

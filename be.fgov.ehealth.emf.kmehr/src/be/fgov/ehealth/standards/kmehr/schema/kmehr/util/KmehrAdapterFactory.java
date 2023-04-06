@@ -232,8 +232,8 @@ public class KmehrAdapterFactory extends AdapterFactoryImpl {
 				return createItemTypeAdapter();
 			}
 			@Override
-			public Adapter caseKmehrmessageType(KmehrmessageType object) {
-				return createKmehrmessageTypeAdapter();
+			public Adapter caseKmehrmessage(Kmehrmessage object) {
+				return createKmehrmessageAdapter();
 			}
 			@Override
 			public Adapter caseLifecycleType(LifecycleType object) {
@@ -1034,16 +1034,16 @@ public class KmehrAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType <em>Kmehrmessage Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage <em>Kmehrmessage</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType
+	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage
 	 * @generated
 	 */
-	public Adapter createKmehrmessageTypeAdapter() {
+	public Adapter createKmehrmessageAdapter() {
 		return null;
 	}
 

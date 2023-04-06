@@ -4,8 +4,7 @@ package be.fgov.ehealth.standards.kmehr.schema.kmehr.impl;
 
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.DocumentRoot;
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrPackage;
-import be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType;
-
+import be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EMap;
@@ -134,8 +133,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public KmehrmessageType getKmehrmessage() {
-		return (KmehrmessageType)getMixed().get(KmehrPackage.Literals.DOCUMENT_ROOT__KMEHRMESSAGE, true);
+	public Kmehrmessage getKmehrmessage() {
+		return (Kmehrmessage)getMixed().get(KmehrPackage.Literals.DOCUMENT_ROOT__KMEHRMESSAGE, true);
 	}
 
 	/**
@@ -143,7 +142,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetKmehrmessage(KmehrmessageType newKmehrmessage, NotificationChain msgs) {
+	public NotificationChain basicSetKmehrmessage(Kmehrmessage newKmehrmessage, NotificationChain msgs) {
 		return ((FeatureMap.Internal)getMixed()).basicAdd(KmehrPackage.Literals.DOCUMENT_ROOT__KMEHRMESSAGE, newKmehrmessage, msgs);
 	}
 
@@ -153,7 +152,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public void setKmehrmessage(KmehrmessageType newKmehrmessage) {
+	public void setKmehrmessage(Kmehrmessage newKmehrmessage) {
 		((FeatureMap.Internal)getMixed()).set(KmehrPackage.Literals.DOCUMENT_ROOT__KMEHRMESSAGE, newKmehrmessage);
 	}
 
@@ -218,7 +217,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 				((EStructuralFeature.Setting)getXSISchemaLocation()).set(newValue);
 				return;
 			case KmehrPackage.DOCUMENT_ROOT__KMEHRMESSAGE:
-				setKmehrmessage((KmehrmessageType)newValue);
+				setKmehrmessage((Kmehrmessage)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -242,7 +241,7 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 				getXSISchemaLocation().clear();
 				return;
 			case KmehrPackage.DOCUMENT_ROOT__KMEHRMESSAGE:
-				setKmehrmessage((KmehrmessageType)null);
+				setKmehrmessage((Kmehrmessage)null);
 				return;
 		}
 		super.eUnset(featureID);

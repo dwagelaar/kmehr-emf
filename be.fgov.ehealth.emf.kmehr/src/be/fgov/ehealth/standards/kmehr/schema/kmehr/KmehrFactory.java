@@ -391,13 +391,13 @@ public interface KmehrFactory extends EFactory {
 	ItemType createItemType();
 
 	/**
-	 * Returns a new object of class '<em>Kmehrmessage Type</em>'.
+	 * Returns a new object of class '<em>Kmehrmessage</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Kmehrmessage Type</em>'.
+	 * @return a new object of class '<em>Kmehrmessage</em>'.
 	 * @generated
 	 */
-	KmehrmessageType createKmehrmessageType();
+	Kmehrmessage createKmehrmessage();
 
 	/**
 	 * Returns a new object of class '<em>Lifecycle Type</em>'.

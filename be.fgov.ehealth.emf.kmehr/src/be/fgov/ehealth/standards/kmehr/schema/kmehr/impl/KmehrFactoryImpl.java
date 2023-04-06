@@ -97,7 +97,7 @@ public class KmehrFactoryImpl extends EFactoryImpl implements KmehrFactory {
 			case KmehrPackage.INCAPACITY_TYPE: return createIncapacityType();
 			case KmehrPackage.INSURANCE_TYPE: return createInsuranceType();
 			case KmehrPackage.ITEM_TYPE: return createItemType();
-			case KmehrPackage.KMEHRMESSAGE_TYPE: return createKmehrmessageType();
+			case KmehrPackage.KMEHRMESSAGE: return createKmehrmessage();
 			case KmehrPackage.LIFECYCLE_TYPE: return createLifecycleType();
 			case KmehrPackage.LOCALITEMATTRIBUTE_TYPE: return createLocalitemattributeType();
 			case KmehrPackage.LOCATION_BIRTH_PLACE_TYPE: return createLocationBirthPlaceType();
@@ -611,9 +611,9 @@ public class KmehrFactoryImpl extends EFactoryImpl implements KmehrFactory {
 	 * @generated
 	 */
 	@Override
-	public KmehrmessageType createKmehrmessageType() {
-		KmehrmessageTypeImpl kmehrmessageType = new KmehrmessageTypeImpl();
-		return kmehrmessageType;
+	public Kmehrmessage createKmehrmessage() {
+		KmehrmessageImpl kmehrmessage = new KmehrmessageImpl();
+		return kmehrmessage;
 	}
 
 	/**

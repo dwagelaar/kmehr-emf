@@ -74,13 +74,13 @@ public interface DocumentRoot extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Kmehrmessage</em>' containment reference.
-	 * @see #setKmehrmessage(KmehrmessageType)
+	 * @see #setKmehrmessage(Kmehrmessage)
 	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrPackage#getDocumentRoot_Kmehrmessage()
 	 * @model containment="true" upper="-2" transient="true" volatile="true" derived="true"
 	 *        extendedMetaData="kind='element' name='kmehrmessage' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	KmehrmessageType getKmehrmessage();
+	Kmehrmessage getKmehrmessage();
 
 	/**
 	 * Sets the value of the '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.DocumentRoot#getKmehrmessage <em>Kmehrmessage</em>}' containment reference.
@@ -90,6 +90,6 @@ public interface DocumentRoot extends EObject {
 	 * @see #getKmehrmessage()
 	 * @generated
 	 */
-	void setKmehrmessage(KmehrmessageType value);
+	void setKmehrmessage(Kmehrmessage value);
 
 } // DocumentRoot

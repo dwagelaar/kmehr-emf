@@ -568,13 +568,13 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kmehr.ecore#//ItemType/recorddatetime"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//ItemType/lnk"/>
     </genClasses>
-    <genClasses ecoreClass="kmehr.ecore#//KmehrmessageType">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//KmehrmessageType/confidentiality"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//KmehrmessageType/header"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//KmehrmessageType/folder"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//KmehrmessageType/signature"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//KmehrmessageType/encryptedData"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//KmehrmessageType/base64EncryptedData"/>
+    <genClasses ecoreClass="kmehr.ecore#//Kmehrmessage">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//Kmehrmessage/confidentiality"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//Kmehrmessage/header"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//Kmehrmessage/folder"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//Kmehrmessage/signature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//Kmehrmessage/encryptedData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//Kmehrmessage/base64EncryptedData"/>
     </genClasses>
     <genClasses ecoreClass="kmehr.ecore#//LifecycleType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kmehr.ecore#//LifecycleType/cd"/>

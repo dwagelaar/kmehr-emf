@@ -57,7 +57,7 @@ import be.fgov.ehealth.standards.kmehr.schema.kmehr.InsuranceType;
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.ItemType;
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrFactory;
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrPackage;
-import be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType;
+import be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage;
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.LifecycleType;
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.LocalitemattributeType;
 import be.fgov.ehealth.standards.kmehr.schema.kmehr.LocationBirthPlaceType;
@@ -426,7 +426,7 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass kmehrmessageTypeEClass = null;
+	private EClass kmehrmessageEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3530,8 +3530,8 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getKmehrmessageType() {
-		return kmehrmessageTypeEClass;
+	public EClass getKmehrmessage() {
+		return kmehrmessageEClass;
 	}
 
 	/**
@@ -3540,8 +3540,8 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getKmehrmessageType_Confidentiality() {
-		return (EReference)kmehrmessageTypeEClass.getEStructuralFeatures().get(0);
+	public EReference getKmehrmessage_Confidentiality() {
+		return (EReference)kmehrmessageEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -3550,8 +3550,8 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getKmehrmessageType_Header() {
-		return (EReference)kmehrmessageTypeEClass.getEStructuralFeatures().get(1);
+	public EReference getKmehrmessage_Header() {
+		return (EReference)kmehrmessageEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -3560,8 +3560,8 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getKmehrmessageType_Folder() {
-		return (EReference)kmehrmessageTypeEClass.getEStructuralFeatures().get(2);
+	public EReference getKmehrmessage_Folder() {
+		return (EReference)kmehrmessageEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -3570,8 +3570,8 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getKmehrmessageType_Signature() {
-		return (EReference)kmehrmessageTypeEClass.getEStructuralFeatures().get(3);
+	public EReference getKmehrmessage_Signature() {
+		return (EReference)kmehrmessageEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -3580,8 +3580,8 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getKmehrmessageType_EncryptedData() {
-		return (EReference)kmehrmessageTypeEClass.getEStructuralFeatures().get(4);
+	public EReference getKmehrmessage_EncryptedData() {
+		return (EReference)kmehrmessageEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -3590,8 +3590,8 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getKmehrmessageType_Base64EncryptedData() {
-		return (EReference)kmehrmessageTypeEClass.getEStructuralFeatures().get(5);
+	public EReference getKmehrmessage_Base64EncryptedData() {
+		return (EReference)kmehrmessageEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -6009,13 +6009,13 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 		createEAttribute(itemTypeEClass, ITEM_TYPE__RECORDDATETIME);
 		createEReference(itemTypeEClass, ITEM_TYPE__LNK);
 
-		kmehrmessageTypeEClass = createEClass(KMEHRMESSAGE_TYPE);
-		createEReference(kmehrmessageTypeEClass, KMEHRMESSAGE_TYPE__CONFIDENTIALITY);
-		createEReference(kmehrmessageTypeEClass, KMEHRMESSAGE_TYPE__HEADER);
-		createEReference(kmehrmessageTypeEClass, KMEHRMESSAGE_TYPE__FOLDER);
-		createEReference(kmehrmessageTypeEClass, KMEHRMESSAGE_TYPE__SIGNATURE);
-		createEReference(kmehrmessageTypeEClass, KMEHRMESSAGE_TYPE__ENCRYPTED_DATA);
-		createEReference(kmehrmessageTypeEClass, KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA);
+		kmehrmessageEClass = createEClass(KMEHRMESSAGE);
+		createEReference(kmehrmessageEClass, KMEHRMESSAGE__CONFIDENTIALITY);
+		createEReference(kmehrmessageEClass, KMEHRMESSAGE__HEADER);
+		createEReference(kmehrmessageEClass, KMEHRMESSAGE__FOLDER);
+		createEReference(kmehrmessageEClass, KMEHRMESSAGE__SIGNATURE);
+		createEReference(kmehrmessageEClass, KMEHRMESSAGE__ENCRYPTED_DATA);
+		createEReference(kmehrmessageEClass, KMEHRMESSAGE__BASE64_ENCRYPTED_DATA);
 
 		lifecycleTypeEClass = createEClass(LIFECYCLE_TYPE);
 		createEReference(lifecycleTypeEClass, LIFECYCLE_TYPE__CD);
@@ -6445,7 +6445,7 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 		initEAttribute(getDocumentRoot_Mixed(), ecorePackage.getEFeatureMapEntry(), "mixed", null, 0, -1, null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDocumentRoot_XMLNSPrefixMap(), ecorePackage.getEStringToStringMapEntry(), null, "xMLNSPrefixMap", null, 0, -1, null, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDocumentRoot_XSISchemaLocation(), ecorePackage.getEStringToStringMapEntry(), null, "xSISchemaLocation", null, 0, -1, null, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDocumentRoot_Kmehrmessage(), this.getKmehrmessageType(), null, "kmehrmessage", null, 0, -2, null, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getDocumentRoot_Kmehrmessage(), this.getKmehrmessage(), null, "kmehrmessage", null, 0, -2, null, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(durationTypeEClass, DurationType.class, "DurationType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDurationType_Decimal(), theXMLTypePackage.getDecimal(), "decimal", null, 1, 1, DurationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -6624,13 +6624,13 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 		initEAttribute(getItemType_Recorddatetime(), theXMLTypePackage.getDateTime(), "recorddatetime", null, 0, 1, ItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getItemType_Lnk(), theCdPackage.getLnkType(), null, "lnk", null, 0, -1, ItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(kmehrmessageTypeEClass, KmehrmessageType.class, "KmehrmessageType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getKmehrmessageType_Confidentiality(), this.getConfidentialityType(), null, "confidentiality", null, 0, 1, KmehrmessageType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getKmehrmessageType_Header(), this.getHeaderType(), null, "header", null, 1, 1, KmehrmessageType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getKmehrmessageType_Folder(), this.getFolderType(), null, "folder", null, 0, -1, KmehrmessageType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getKmehrmessageType_Signature(), theXmldsigPackage.getSignatureType(), null, "signature", null, 0, 1, KmehrmessageType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getKmehrmessageType_EncryptedData(), theXmlencPackage.getEncryptedType(), null, "encryptedData", null, 0, 1, KmehrmessageType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getKmehrmessageType_Base64EncryptedData(), this.getBase64EncryptedDataType(), null, "base64EncryptedData", null, 0, 1, KmehrmessageType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(kmehrmessageEClass, Kmehrmessage.class, "Kmehrmessage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getKmehrmessage_Confidentiality(), this.getConfidentialityType(), null, "confidentiality", null, 0, 1, Kmehrmessage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getKmehrmessage_Header(), this.getHeaderType(), null, "header", null, 1, 1, Kmehrmessage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getKmehrmessage_Folder(), this.getFolderType(), null, "folder", null, 0, -1, Kmehrmessage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getKmehrmessage_Signature(), theXmldsigPackage.getSignatureType(), null, "signature", null, 0, 1, Kmehrmessage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getKmehrmessage_EncryptedData(), theXmlencPackage.getEncryptedType(), null, "encryptedData", null, 0, 1, Kmehrmessage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getKmehrmessage_Base64EncryptedData(), this.getBase64EncryptedDataType(), null, "base64EncryptedData", null, 0, 1, Kmehrmessage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(lifecycleTypeEClass, LifecycleType.class, "LifecycleType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getLifecycleType_Cd(), theCdPackage.getCDLIFECYCLE(), null, "cd", null, 1, 1, LifecycleType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -8997,14 +8997,14 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (kmehrmessageTypeEClass,
+		  (kmehrmessageEClass,
 		   source,
 		   new String[] {
 			   "name", "kmehrmessageType",
 			   "kind", "elementOnly"
 		   });
 		addAnnotation
-		  (getKmehrmessageType_Confidentiality(),
+		  (getKmehrmessage_Confidentiality(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -9012,7 +9012,7 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getKmehrmessageType_Header(),
+		  (getKmehrmessage_Header(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -9020,7 +9020,7 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getKmehrmessageType_Folder(),
+		  (getKmehrmessage_Folder(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -9028,7 +9028,7 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getKmehrmessageType_Signature(),
+		  (getKmehrmessage_Signature(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -9036,7 +9036,7 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getKmehrmessageType_EncryptedData(),
+		  (getKmehrmessage_EncryptedData(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -9044,7 +9044,7 @@ public class KmehrPackageImpl extends EPackageImpl implements KmehrPackage {
 			   "namespace", "##targetNamespace"
 		   });
 		addAnnotation
-		  (getKmehrmessageType_Base64EncryptedData(),
+		  (getKmehrmessage_Base64EncryptedData(),
 		   source,
 		   new String[] {
 			   "kind", "element",

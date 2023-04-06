@@ -3438,14 +3438,14 @@ public interface KmehrPackage extends EPackage {
 	int ITEM_TYPE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageTypeImpl <em>Kmehrmessage Type</em>}' class.
+	 * The meta object id for the '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageImpl <em>Kmehrmessage</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageTypeImpl
-	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrPackageImpl#getKmehrmessageType()
+	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageImpl
+	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrPackageImpl#getKmehrmessage()
 	 * @generated
 	 */
-	int KMEHRMESSAGE_TYPE = 41;
+	int KMEHRMESSAGE = 41;
 
 	/**
 	 * The feature id for the '<em><b>Confidentiality</b></em>' containment reference.
@@ -3454,7 +3454,7 @@ public interface KmehrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KMEHRMESSAGE_TYPE__CONFIDENTIALITY = 0;
+	int KMEHRMESSAGE__CONFIDENTIALITY = 0;
 
 	/**
 	 * The feature id for the '<em><b>Header</b></em>' containment reference.
@@ -3463,7 +3463,7 @@ public interface KmehrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KMEHRMESSAGE_TYPE__HEADER = 1;
+	int KMEHRMESSAGE__HEADER = 1;
 
 	/**
 	 * The feature id for the '<em><b>Folder</b></em>' containment reference list.
@@ -3472,7 +3472,7 @@ public interface KmehrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KMEHRMESSAGE_TYPE__FOLDER = 2;
+	int KMEHRMESSAGE__FOLDER = 2;
 
 	/**
 	 * The feature id for the '<em><b>Signature</b></em>' containment reference.
@@ -3481,7 +3481,7 @@ public interface KmehrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KMEHRMESSAGE_TYPE__SIGNATURE = 3;
+	int KMEHRMESSAGE__SIGNATURE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Encrypted Data</b></em>' containment reference.
@@ -3490,7 +3490,7 @@ public interface KmehrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KMEHRMESSAGE_TYPE__ENCRYPTED_DATA = 4;
+	int KMEHRMESSAGE__ENCRYPTED_DATA = 4;
 
 	/**
 	 * The feature id for the '<em><b>Base64 Encrypted Data</b></em>' containment reference.
@@ -3499,25 +3499,25 @@ public interface KmehrPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA = 5;
+	int KMEHRMESSAGE__BASE64_ENCRYPTED_DATA = 5;
 
 	/**
-	 * The number of structural features of the '<em>Kmehrmessage Type</em>' class.
+	 * The number of structural features of the '<em>Kmehrmessage</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int KMEHRMESSAGE_TYPE_FEATURE_COUNT = 6;
+	int KMEHRMESSAGE_FEATURE_COUNT = 6;
 
 	/**
-	 * The number of operations of the '<em>Kmehrmessage Type</em>' class.
+	 * The number of operations of the '<em>Kmehrmessage</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int KMEHRMESSAGE_TYPE_OPERATION_COUNT = 0;
+	int KMEHRMESSAGE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.LifecycleTypeImpl <em>Lifecycle Type</em>}' class.
@@ -9172,80 +9172,80 @@ public interface KmehrPackage extends EPackage {
 	EReference getItemType_Lnk();
 
 	/**
-	 * Returns the meta object for class '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType <em>Kmehrmessage Type</em>}'.
+	 * Returns the meta object for class '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage <em>Kmehrmessage</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Kmehrmessage Type</em>'.
-	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType
+	 * @return the meta object for class '<em>Kmehrmessage</em>'.
+	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage
 	 * @generated
 	 */
-	EClass getKmehrmessageType();
+	EClass getKmehrmessage();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getConfidentiality <em>Confidentiality</em>}'.
+	 * Returns the meta object for the containment reference '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getConfidentiality <em>Confidentiality</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Confidentiality</em>'.
-	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getConfidentiality()
-	 * @see #getKmehrmessageType()
+	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getConfidentiality()
+	 * @see #getKmehrmessage()
 	 * @generated
 	 */
-	EReference getKmehrmessageType_Confidentiality();
+	EReference getKmehrmessage_Confidentiality();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getHeader <em>Header</em>}'.
+	 * Returns the meta object for the containment reference '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getHeader <em>Header</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Header</em>'.
-	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getHeader()
-	 * @see #getKmehrmessageType()
+	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getHeader()
+	 * @see #getKmehrmessage()
 	 * @generated
 	 */
-	EReference getKmehrmessageType_Header();
+	EReference getKmehrmessage_Header();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getFolder <em>Folder</em>}'.
+	 * Returns the meta object for the containment reference list '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getFolder <em>Folder</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Folder</em>'.
-	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getFolder()
-	 * @see #getKmehrmessageType()
+	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getFolder()
+	 * @see #getKmehrmessage()
 	 * @generated
 	 */
-	EReference getKmehrmessageType_Folder();
+	EReference getKmehrmessage_Folder();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getSignature <em>Signature</em>}'.
+	 * Returns the meta object for the containment reference '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getSignature <em>Signature</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Signature</em>'.
-	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getSignature()
-	 * @see #getKmehrmessageType()
+	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getSignature()
+	 * @see #getKmehrmessage()
 	 * @generated
 	 */
-	EReference getKmehrmessageType_Signature();
+	EReference getKmehrmessage_Signature();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getEncryptedData <em>Encrypted Data</em>}'.
+	 * Returns the meta object for the containment reference '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getEncryptedData <em>Encrypted Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Encrypted Data</em>'.
-	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getEncryptedData()
-	 * @see #getKmehrmessageType()
+	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getEncryptedData()
+	 * @see #getKmehrmessage()
 	 * @generated
 	 */
-	EReference getKmehrmessageType_EncryptedData();
+	EReference getKmehrmessage_EncryptedData();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getBase64EncryptedData <em>Base64 Encrypted Data</em>}'.
+	 * Returns the meta object for the containment reference '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getBase64EncryptedData <em>Base64 Encrypted Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Base64 Encrypted Data</em>'.
-	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.KmehrmessageType#getBase64EncryptedData()
-	 * @see #getKmehrmessageType()
+	 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.Kmehrmessage#getBase64EncryptedData()
+	 * @see #getKmehrmessage()
 	 * @generated
 	 */
-	EReference getKmehrmessageType_Base64EncryptedData();
+	EReference getKmehrmessage_Base64EncryptedData();
 
 	/**
 	 * Returns the meta object for class '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.LifecycleType <em>Lifecycle Type</em>}'.
@@ -13710,14 +13710,14 @@ public interface KmehrPackage extends EPackage {
 		EReference ITEM_TYPE__LNK = eINSTANCE.getItemType_Lnk();
 
 		/**
-		 * The meta object literal for the '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageTypeImpl <em>Kmehrmessage Type</em>}' class.
+		 * The meta object literal for the '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageImpl <em>Kmehrmessage</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageTypeImpl
-		 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrPackageImpl#getKmehrmessageType()
+		 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrmessageImpl
+		 * @see be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.KmehrPackageImpl#getKmehrmessage()
 		 * @generated
 		 */
-		EClass KMEHRMESSAGE_TYPE = eINSTANCE.getKmehrmessageType();
+		EClass KMEHRMESSAGE = eINSTANCE.getKmehrmessage();
 
 		/**
 		 * The meta object literal for the '<em><b>Confidentiality</b></em>' containment reference feature.
@@ -13725,7 +13725,7 @@ public interface KmehrPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference KMEHRMESSAGE_TYPE__CONFIDENTIALITY = eINSTANCE.getKmehrmessageType_Confidentiality();
+		EReference KMEHRMESSAGE__CONFIDENTIALITY = eINSTANCE.getKmehrmessage_Confidentiality();
 
 		/**
 		 * The meta object literal for the '<em><b>Header</b></em>' containment reference feature.
@@ -13733,7 +13733,7 @@ public interface KmehrPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference KMEHRMESSAGE_TYPE__HEADER = eINSTANCE.getKmehrmessageType_Header();
+		EReference KMEHRMESSAGE__HEADER = eINSTANCE.getKmehrmessage_Header();
 
 		/**
 		 * The meta object literal for the '<em><b>Folder</b></em>' containment reference list feature.
@@ -13741,7 +13741,7 @@ public interface KmehrPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference KMEHRMESSAGE_TYPE__FOLDER = eINSTANCE.getKmehrmessageType_Folder();
+		EReference KMEHRMESSAGE__FOLDER = eINSTANCE.getKmehrmessage_Folder();
 
 		/**
 		 * The meta object literal for the '<em><b>Signature</b></em>' containment reference feature.
@@ -13749,7 +13749,7 @@ public interface KmehrPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference KMEHRMESSAGE_TYPE__SIGNATURE = eINSTANCE.getKmehrmessageType_Signature();
+		EReference KMEHRMESSAGE__SIGNATURE = eINSTANCE.getKmehrmessage_Signature();
 
 		/**
 		 * The meta object literal for the '<em><b>Encrypted Data</b></em>' containment reference feature.
@@ -13757,7 +13757,7 @@ public interface KmehrPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference KMEHRMESSAGE_TYPE__ENCRYPTED_DATA = eINSTANCE.getKmehrmessageType_EncryptedData();
+		EReference KMEHRMESSAGE__ENCRYPTED_DATA = eINSTANCE.getKmehrmessage_EncryptedData();
 
 		/**
 		 * The meta object literal for the '<em><b>Base64 Encrypted Data</b></em>' containment reference feature.
@@ -13765,7 +13765,7 @@ public interface KmehrPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference KMEHRMESSAGE_TYPE__BASE64_ENCRYPTED_DATA = eINSTANCE.getKmehrmessageType_Base64EncryptedData();
+		EReference KMEHRMESSAGE__BASE64_ENCRYPTED_DATA = eINSTANCE.getKmehrmessage_Base64EncryptedData();
 
 		/**
 		 * The meta object literal for the '{@link be.fgov.ehealth.standards.kmehr.schema.kmehr.impl.LifecycleTypeImpl <em>Lifecycle Type</em>}' class.

@@ -314,9 +314,9 @@ public class KmehrSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case KmehrPackage.KMEHRMESSAGE_TYPE: {
-				KmehrmessageType kmehrmessageType = (KmehrmessageType)theEObject;
-				T result = caseKmehrmessageType(kmehrmessageType);
+			case KmehrPackage.KMEHRMESSAGE: {
+				Kmehrmessage kmehrmessage = (Kmehrmessage)theEObject;
+				T result = caseKmehrmessage(kmehrmessage);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1247,17 +1247,17 @@ public class KmehrSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Kmehrmessage Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Kmehrmessage</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Kmehrmessage Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Kmehrmessage</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseKmehrmessageType(KmehrmessageType object) {
+	public T caseKmehrmessage(Kmehrmessage object) {
 		return null;
 	}
 
