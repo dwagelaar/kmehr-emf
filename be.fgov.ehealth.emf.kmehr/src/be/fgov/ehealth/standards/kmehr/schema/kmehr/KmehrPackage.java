@@ -46,7 +46,7 @@ public interface KmehrPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_PREFIX = "kmehr";
+	String eNS_PREFIX = "";
 
 	/**
 	 * The singleton instance of the package.
