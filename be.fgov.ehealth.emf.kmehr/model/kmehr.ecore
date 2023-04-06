@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="kmehr" nsURI="http://www.ehealth.fgov.be/standards/kmehr/schema/v1"
-    nsPrefix="kmehr">
+    nsPrefix="">
   <eAnnotations>
     <details key="appinfo" value="&#xA; Implementation-Title: XSD 22. KMEHR&#xA; Specification-Version: 1.38&#xA; Implementation-Version: 1.38.0&#xA; Build-Time: 20230328-0850 &#xA; &#xA;&#xA; Implementation-Title: XSD 22. KMEHR&#xA; Specification-Version: 1.38&#xA; Implementation-Version: 1.38.0&#xA; Build-Time: 20230328-0850 &#xA; &#xA;&#xA; Implementation-Title: XSD 22. KMEHR&#xA; Specification-Version: 1.38&#xA; Implementation-Version: 1.38.0&#xA; Build-Time: 20230328-0850 &#xA; &#xA;&#xA; Implementation-Title: XSD 22. KMEHR&#xA; Specification-Version: 1.38&#xA; Implementation-Version: 1.38.0&#xA; Build-Time: 20230328-0850 &#xA; &#xA;&#xA; Implementation-Title: XSD 22. KMEHR&#xA; Specification-Version: 1.38&#xA; Implementation-Version: 1.38.0&#xA; Build-Time: 20230328-0850 &#xA; "/>
   </eAnnotations>
