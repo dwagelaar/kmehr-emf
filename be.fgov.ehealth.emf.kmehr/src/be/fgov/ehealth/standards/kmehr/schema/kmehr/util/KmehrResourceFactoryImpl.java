@@ -3,11 +3,8 @@
 package be.fgov.ehealth.standards.kmehr.schema.kmehr.util;
 
 import org.eclipse.emf.common.util.URI;
-
 import org.eclipse.emf.ecore.resource.Resource;
-
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
-
 import org.eclipse.emf.ecore.xmi.XMLResource;
 
 /**
@@ -35,8 +32,8 @@ public class KmehrResourceFactoryImpl extends ResourceFactoryImpl {
 	 * @generated
 	 */
 	@Override
-	public Resource createResource(URI uri) {
-		XMLResource result = new KmehrResourceImpl(uri);
+	public Resource createResource(final URI uri) {
+		final XMLResource result = new KmehrResourceImpl(uri);
 		result.getDefaultSaveOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);
 		result.getDefaultLoadOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);
 
@@ -46,6 +43,8 @@ public class KmehrResourceFactoryImpl extends ResourceFactoryImpl {
 		result.getDefaultSaveOptions().put(XMLResource.OPTION_USE_ENCODED_ATTRIBUTE_STYLE, Boolean.TRUE);
 
 		result.getDefaultLoadOptions().put(XMLResource.OPTION_USE_LEXICAL_HANDLER, Boolean.TRUE);
+
+		result.getDefaultSaveOptions().put(XMLResource.OPTION_ENCODING, "UTF-8");
 		return result;
 	}
 
