@@ -21,7 +21,7 @@ For Maven projects, add the following to your POM:
 	<dependency>
 		<groupId>be.fgov.ehealth.emf.kmehr</groupId>
 		<artifactId>be.fgov.ehealth.emf.kmehr</artifactId>
-		<version>1.38.0-SNAPSHOT</version>
+		<version>1.38.0</version>
 	</dependency>
 </dependencies>
 ```
